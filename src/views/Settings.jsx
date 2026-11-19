@@ -40,7 +40,13 @@ export default function Settings({ S, update, api }) {
         <div className="flex flex-col gap-5">
           <Section title="Affichage">
             <Toggle label="Mode économie automatique" hint="Simplifie l'accueil quand la batterie est faible" on={S.settings.eco} onChange={(v) => set((x) => { x.eco = v })} />
-            <Toggle label="Thème sombre" on={S.settings.dark} onChange={(v) => set((x) => { x.dark = v })} />
+            <Seg
+              label="Thème visuel"
+              value={S.settings.dark ? 'dark' : 'warm'}
+              options={[[ 'warm', 'Warm Minimalist' ], [ 'dark', 'Dark Premium' ]]}
+              onChange={(v) => set((x) => { x.dark = v === 'dark' })}
+            />
+            <p className="pb-2 text-xs text-muted">Warm Minimalist : fond ivoire et vert forêt. Dark Premium : surfaces profondes et vert émeraude.</p>
             <Seg label="Taille du texte" value={S.settings.size} options={[['s', 'Petit'], ['m', 'Moyen'], ['l', 'Grand']]} onChange={(v) => set((x) => { x.size = v })} />
           </Section>
           <Section title="Saisons prises en compte">

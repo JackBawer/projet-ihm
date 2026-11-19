@@ -68,3 +68,12 @@ Onglet Enveloppes > Dépenses fixes : internet, loyer, salle de sport… (montan
 Tant qu'une dépense fixe du mois n'est pas marquée « Payé », son montant est retiré d'avance de ce que tu peux dépenser.
 « Payé » la transforme en vraie dépense du jour : le budget du jour ne bouge pas, puisqu'elle était déjà réservée.
 La batterie est mesurée sur le budget libre (sans les dépenses fixes), et les paiements fixes ne déclenchent pas d'alerte.
+
+
+## Thèmes visuels
+
+EcoBudget propose deux palettes sélectionnables dans **Réglages → Affichage → Thème visuel** :
+- **Warm Minimalist** : ivoire, surfaces blanches et vert forêt (thème par défaut).
+- **Dark Premium** : surfaces sombres et accent vert émeraude.
+
+Le choix est conservé avec les autres préférences locales.

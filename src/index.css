@@ -1,14 +1,32 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Couleurs du thème : une seule source, changée en bloc par la classe .dark */
+/* Design tokens: switch the .dark class on <html> to change the full palette. */
 :root {
-  --sand: #F6F2EA; --card: #FFFFFF; --ink: #1B1A17; --muted: #5E5A52;
-  --line: #E7E1D6; --soft: #EFEAE0; --accent: #0E7C66; --accentsoft: #E3F2EE; --danger: #B42318; --warn: #C2410C;
+  color-scheme: light;
+  --sand: #F7F7F2;
+  --card: #FFFFFF;
+  --ink: #202820;
+  --muted: #747C72;
+  --line: #E5E8DF;
+  --soft: #EEF1E9;
+  --accent: #286B50;
+  --accentsoft: #E5F1E9;
+  --danger: #B74747;
+  --warn: #A96820;
 }
 .dark {
-  --sand: #14171A; --card: #1E2327; --ink: #F1EEE8; --muted: #ADA89E;
-  --line: #333A41; --soft: #2A3036; --accent: #3CC2A2; --accentsoft: #173A32; --danger: #F97066; --warn: #FDBA74;
+  color-scheme: dark;
+  --sand: #111714;
+  --card: #1A2420;
+  --ink: #F1F5F1;
+  --muted: #A5B2A9;
+  --line: #303D36;
+  --soft: #24312A;
+  --accent: #62C69A;
+  --accentsoft: #203D30;
+  --danger: #FF8278;
+  --warn: #F2B766;
 }
 @theme inline {
   --color-sand: var(--sand); --color-card: var(--card); --color-ink: var(--ink); --color-muted: var(--muted);
